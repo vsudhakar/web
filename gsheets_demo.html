@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GSheets Demo :: Visrut S.</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+	<style type="text/css">
+		table {
+			border-collapse: collapse;
+		}
+
+		th, td {
+			padding: 15px;
+			text-align: left;
+			border-bottom: 1px solid #ddd;
+			width: 30%;
+		}
+
+		.multiline {
+			white-space:pre-wrap; 
+			word-wrap:break-word;
+		}
+
+		tr:nth-child(even) {
+			background-color: #f2f2f2;
+		}
+
+		tr:hover {
+			background-color: #f5f5f5;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="sidebar">
+		<ul class="primaryMenu">
+			<li><a href="/index.html">Home</a></li>
+			<li class="active"><a href="/software.html">Software</a></li>
+				<ul class="secondaryMenu">
+					<li class="active"><a href="/gsheets_demo.html">GSheets JS Embed Demo</a></li>
+				</ul>
+			<li><a href="/photography.html">Photography</a></li>
+			<li><a href="http://visonthe.net">Alt Site</a></li>
+		</ul>
+	</div>
+
+	<div class="content">
+		<h1>GSheets JS Preview</h1>
+
+		<hr>
+
+		<p>This is a functional demo of parsing a Google Sheets spreadsheet into a responsive CSS table.</p>
+		<p>Based off of StackOverflow answer here: <a href="https://stackoverflow.com/a/7431565">https://stackoverflow.com/a/7431565</a></p>
+
+		<h2>Table Demo</h2>
+
+		<div id="schedule" style="overflow-x:auto;">
+		</div>
+
+		<br>
+
+		<h2>Google Sheets Embed</h2>
+
+		<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRMQfX4qnTUdBiB58RlkBH_u8tr_LGfniXtnsVxi0Btffp9YvilT3PiUL7rLfVAxGFmt6GMVgBItN6F/pubhtml?widget=true&amp;headers=false" style="width: 30%; height: 50%"></iframe>
+	</div>
+
+	<script type="text/javascript" src="gsheets.js"></script>
+
+</body>
+</html>
